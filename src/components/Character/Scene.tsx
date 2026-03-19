@@ -19,7 +19,7 @@ const Scene = () => {
   const sceneRef = useRef(new THREE.Scene());
   const { setLoading } = useLoading();
 
-  const [character, setChar] = useState<THREE.Object3D | null>(null);
+  const [, setChar] = useState<THREE.Object3D | null>(null);
 
   useEffect(() => {
     let isMounted = true;
